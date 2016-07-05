@@ -168,8 +168,7 @@ static gboolean is_tag_empty(gchar *tagName)
                          "hr", "img", "input", "keygen", "link", "meta",
                          "param", "source", "track", "wbr", "!DOCTYPE"};
 
-    unsigned int i;
-    for(i=0; i<(sizeof(emptyTags)/sizeof(emptyTags[0])); i++)
+    for(unsigned int i=0; i<(sizeof(emptyTags)/sizeof(emptyTags[0])); i++)
     {
         if(strcmp(tagName, emptyTags[i]) == 0)
             return TRUE;
