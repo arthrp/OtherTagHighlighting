@@ -12,7 +12,7 @@
 #include <string.h>
 #include "Scintilla.h"  /* for the SCNotification struct */
 #include "SciLexer.h"
-#include "sciwrappers.h"
+#include <sciwrappers.h>
 
 #define INDICATOR_TAGMATCH 9
 #define MAX_TAG_NAME 64
