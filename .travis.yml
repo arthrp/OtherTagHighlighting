@@ -1,7 +1,6 @@
-sudo: false
+
 language: c
-addons:
-  apt:
-    packages:
-      - geany
+sudo: required
+before_install:
+- sudo apt-get install libimlib2-dev
 script: make
